@@ -1,0 +1,17 @@
+.pricing-table table,
+.pricing-table tr,
+.pricing-table td {
+  @apply border border-primary/20;
+}
+
+.pricing-table td {
+  @apply px-5 py-4 max-w-xs;
+}
+
+.price-leader {
+  @apply bg-orange bg-opacity-10 !border-orange;
+}
+
+.pricing-table button {
+  @apply px-7 py-3 rounded-full;
+}

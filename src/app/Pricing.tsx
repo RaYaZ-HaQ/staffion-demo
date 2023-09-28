@@ -50,7 +50,11 @@ export default function Pricing() {
       </div>
       <PricingTable planDuration={selectedPlanDuration} />
       {plans.map((plan) => (
-        <PriceCard plan={plan} planDuration={selectedPlanDuration} />
+        <PriceCard
+          key={plan.name}
+          plan={plan}
+          planDuration={selectedPlanDuration}
+        />
       ))}
     </div>
   );

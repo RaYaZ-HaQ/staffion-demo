@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={epilogue.className}>
+      <body className={`relative lg:static ${epilogue.className}`}>
         <Navbar />
         {children}
         <footer></footer>

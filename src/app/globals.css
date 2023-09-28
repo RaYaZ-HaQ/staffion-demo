@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-gradient {
   @apply bg-gradient-115deg from-primary to-[#05F];
 }

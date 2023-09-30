@@ -253,7 +253,7 @@ function PricingTable({ planDuration }: { planDuration: PlanDuration }) {
 function PriceCard({ plan, planDuration }: IPriceCard) {
   return (
     <table
-      className={`border mt-4 mx-auto ${
+      className={`lg:hidden border mt-4 mx-auto last:mb-12 ${
         plan.bestOffer ? "border-orange" : "border-primary border-opacity-20"
       }`}
     >

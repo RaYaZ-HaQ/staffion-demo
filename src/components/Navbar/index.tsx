@@ -57,12 +57,16 @@ function DesktopNavigation({ className }: INavigation) {
       />
       <NavLinks />
       <ul className="ml-auto flex gap-5">
-        <button className="hover:text-orange hover:underline ease-in-out duration-200">
-          Log in
-        </button>
-        <button className="bg-white hover:bg-secondary text-orange font-bold px-4 py-1 rounded-3xl shadow-sm shrink-0">
-          Sign up
-        </button>
+        <Link href="/login">
+          <button className="hover:text-orange hover:underline ease-in-out duration-200">
+            Log in
+          </button>
+        </Link>
+        <Link href="/signup">
+          <button className="bg-white hover:bg-secondary text-orange font-bold px-4 py-1 rounded-3xl shadow-sm shrink-0">
+            Sign up
+          </button>
+        </Link>
       </ul>
     </nav>
   );

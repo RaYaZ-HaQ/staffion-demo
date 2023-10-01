@@ -17,6 +17,7 @@ const config: Config = {
       blue: "#00AFFA",
       red: "#FA3232",
       white: "#FFFFFF",
+      black: "#000000",
     },
     extend: {
       fontSize: {

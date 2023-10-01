@@ -14,10 +14,10 @@ export default function MobileNavigation({ className }: INavigation) {
       <div className="flex flex-row justify-between flex-wrap">
         <NavLinks open={open} />
         <ul className={`${open ? "mt-4 flex flex-col gap-3" : "hidden"}`}>
-          <Link href="#">
+          <Link href="/login">
             <li className="hover:text-orange ease-out duration-200">Login</li>
           </Link>
-          <Link href="#">
+          <Link href="/signup">
             <li className="hover:text-orange ease-out duration-200">Signup</li>
           </Link>
         </ul>

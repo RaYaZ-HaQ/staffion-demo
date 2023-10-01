@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Pricing from "./Pricing";
 
 export default function Home() {
@@ -13,12 +14,16 @@ export default function Home() {
           veniam consequat sunt nostrud amet.
         </p>
         <div className="flex gap-5 pb-10 lg:pb-28">
-          <button className="bg-orange hover:bg-orange/90 text-white font-bold rounded-full px-4 lg:px-12 py-3">
-            Sign up
-          </button>
-          <button className="bg-white hover:bg-secondary text-orange font-bold rounded-full px-4 lg:px-12 py-3">
-            Log in
-          </button>
+          <Link href="/signup">
+            <button className="bg-orange hover:bg-orange/90 text-white font-bold rounded-full px-4 lg:px-12 py-3">
+              Sign up
+            </button>
+          </Link>
+          <Link href="/login">
+            <button className="bg-white hover:bg-secondary text-orange font-bold rounded-full px-4 lg:px-12 py-3">
+              Log in
+            </button>
+          </Link>
         </div>
       </section>
       <Pricing />

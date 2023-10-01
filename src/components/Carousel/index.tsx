@@ -37,6 +37,7 @@ export default function Carousel({ className = "", slides }: ICarousel) {
           className={`${
             currentSlide != index ? "hidden" : "block"
           } text-white `}
+          key={index}
         >
           <div className="flex flex-col gap-5">
             {slide.image && (
